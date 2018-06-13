@@ -1,4 +1,11 @@
 
 /* Clip-path polygon */
 
-$polygon: polygon(0 0, 100% 0, 67% 100%, 0% 100%);
+$polygon-left: polygon(0 0, 100% 0, 67% 100%, 0% 100%);
+$polygon-right: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
+
+/* Colors */
+
+/* Others variables */
+
+$box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);

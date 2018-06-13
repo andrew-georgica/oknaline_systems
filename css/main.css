@@ -1,25 +1,46 @@
 /* Clip-path polygon */
+/* Colors */
+/* Others variables */
+/* Menu */
+#menu_block {
+  height: 90px;
+  -webkit-box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
+  -moz-box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
+  -ms-box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
+  box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
+}
+
+/* --- End Menu --- */
 .catalog_wrapper {
   position: relative;
   height: 650px;
   background-color: pink;
   margin-top: 200px;
   padding-top: 25px;
+  overflow: hidden;
 }
 
-.side_block {
+.side_block, .side_block_left, .side_block_right {
   background-color: greenyellow;
   width: 1000px;
   height: 600px;
   position: absolute;
-  left: 0;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  /*sass*/
+}
+
+.side_block_left {
+  left: 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 67% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 67% 100%, 0% 100%);
+}
+
+.side_block_right {
+  right: 0;
+  -webkit-clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .hide_left {
@@ -32,7 +53,13 @@
   left: 0;
 }
 
-.buffer {
-  height: 1000px;
+.hide_right {
+  opacity: 0;
+  right: -100%;
+}
+
+.show_right {
+  opacity: 1;
+  right: 0;
 }
 /*# sourceMappingURL=main.css.map */

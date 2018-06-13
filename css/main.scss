@@ -1,4 +1,17 @@
+
 @import "mixin";
+@import "variables";
+
+
+/* Menu */
+
+#menu_block {
+    height: 90px;
+    @include box-shadow($box-shadow);    
+}
+
+/* --- End Menu --- */
+
 
 .catalog_wrapper {
     position: relative;
@@ -6,6 +19,7 @@
     background-color: pink;
     margin-top: 200px;
     padding-top: 25px;
+    overflow: hidden;
 }
 
 .side_block {
@@ -13,12 +27,22 @@
     width: 1000px;
     height: 600px;
     position: absolute;
+    
+    @include transition(all,1s);
+}
+
+.side_block_left {
     left: 0;
 
-    @include transition(all,1s);
-    /*sass*/
-    -webkit-clip-path: polygon(0 0, 100% 0, 67% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 67% 100%, 0% 100%);
+    @extend .side_block;
+    @include block_clip($polygon-left);
+}
+
+.side_block_right {
+    right: 0;
+
+    @extend .side_block;
+    @include block_clip($polygon-right);
 }
 
 .hide_left {
@@ -31,6 +55,12 @@
     left:0;
 }
 
-.buffer {
-    height: 1000px;
+.hide_right {
+    opacity: 0;
+    right: -100%;
+}
+
+.show_right {
+    opacity:1;
+    right:0;
 }
