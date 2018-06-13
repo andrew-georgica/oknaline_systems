@@ -1,0 +1,38 @@
+/* Clip-path polygon */
+.catalog_wrapper {
+  position: relative;
+  height: 650px;
+  background-color: pink;
+  margin-top: 200px;
+  padding-top: 25px;
+}
+
+.side_block {
+  background-color: greenyellow;
+  width: 1000px;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  /*sass*/
+  -webkit-clip-path: polygon(0 0, 100% 0, 67% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 67% 100%, 0% 100%);
+}
+
+.hide_left {
+  opacity: 0;
+  left: -100%;
+}
+
+.show_left {
+  opacity: 1;
+  left: 0;
+}
+
+.buffer {
+  height: 1000px;
+}
+/*# sourceMappingURL=main.css.map */

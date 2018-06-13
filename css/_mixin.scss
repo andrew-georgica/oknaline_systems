@@ -1,0 +1,10 @@
+@import "variables";
+
+
+@mixin transition($property, $duration) {
+    -webkit-transition: $property $duration;
+    -moz-transition: $property $duration;
+    -o-transition: $property $duration;
+    transition: $property $duration;
+}
+

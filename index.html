@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>OknaLine</title>
+    
+
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Media -->
+    <link href="css/media.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <section id="page-wrapper">
+
+        <article class="catalog_wrapper">
+            <div id="left_block" class="side_block hide_left"></div>
+        </article>
+  
+        <div class="buffer"></div>
+
+    </section>
+
+    <section id="modals-section">
+
+      <div class="modal fade" id="modal1">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+              <h3>
+
+              </h3>
+
+              <form>
+                <h4>
+
+                </h4>
+
+                <input type="text" placeholder="ФИО*" name="name" pattern=".{5,}" title="Введите минимум 5 символов"  required>
+                <input type="text" name="tel" placeholder="Телефон*" pattern="\d*" title="Phone number should contain only digits." required >
+                <input type="text" name="email" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter correct email" required >
+                <input type="text" placeholder="Город" name="city" pattern=".{2,}" title="Введите минимум 2 символов"  required>
+
+                <h4>
+
+                </h4>
+
+                <textarea cols="50" id="title" name="title" placeholder="Комментарий" rows="4"></textarea>
+                <input type="submit" value="Отправить">
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/side_display.js"></script>
+
+
+  </body>
+</html>
