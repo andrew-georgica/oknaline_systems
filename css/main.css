@@ -1,6 +1,64 @@
 /* Clip-path polygon */
 /* Colors */
+/* Fonts */
 /* Others variables */
+/* Main elements */
+h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 100px;
+}
+
+h4 {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+.line {
+  border: 2px solid #000;
+  display: block;
+  width: 70px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  margin-right: 100px;
+}
+
+a.page_btn {
+  background-color: #fdead5;
+  box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
+  color: #000000;
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2em;
+  font-weight: 600;
+  position: absolute;
+  padding: 15px 15px;
+  width: 400px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  left: 50%;
+  margin-left: -200px;
+  bottom: -33px;
+}
+
+a.page_btn:hover {
+  transform: scale(1.05);
+}
+
+/* --- End Main elements --- */
 /* Menu */
 #menu_block {
   height: 90px;
@@ -8,9 +66,64 @@
   -moz-box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
   -ms-box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
   box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
+  padding-top: 20px;
+  position: relative;
+}
+
+#menu_block .line {
+  border-color: #fdead5;
+  box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
+}
+
+.right_column {
+  text-align: right;
+  padding-right: 150px;
+}
+
+.right_column h4 {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a.header_btn {
+  border: 2px solid #000;
+  color: #000000;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7em;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 20px;
+  width: 225px;
 }
 
 /* --- End Menu --- */
+/* Header section */
+#header_section {
+  background-image: url("../img/header_section/src/1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 850px;
+  position: relative;
+}
+
+.header_section_block {
+  background: #ffffff;
+  box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
+  width: 550px;
+  height: 450px;
+  padding-top: 75px;
+  position: absolute;
+  top: 90px;
+  right: 200px;
+}
+
+.header_section_block img {
+  margin: 0 auto;
+}
+
+/* --- End Header section --- */
 .catalog_wrapper {
   position: relative;
   height: 650px;
