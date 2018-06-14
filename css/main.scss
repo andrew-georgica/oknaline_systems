@@ -22,6 +22,12 @@ h4 {
     font-weight: 400;
 }
 
+p {
+    font-family: $content_font;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
 .line {
     border: 2px solid #000;
     display: block;
@@ -31,6 +37,23 @@ h4 {
     left: 0;
     margin-top: -1px;
     margin-right: 100px;
+}
+
+.title_container {
+    filter: drop-shadow(0px 5px 5px rgba(22,22,31,.17));
+    z-index: 10;
+    position: relative;
+    top: 0;
+    left: 0;
+    @include transition(all,1s);
+}
+
+.title_section {
+    position: relative;
+    height: 170px;
+    background-color: $title_bg;
+    @include block_clip($title-section-polygon);
+    padding-top: 60px;
 }
 
 a.page_btn {
@@ -105,7 +128,6 @@ a.header_btn {
     background-image: url("../img/header_section/src/1.png");
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 850px;
     position: relative;
 }
@@ -128,11 +150,24 @@ a.header_btn {
 /* --- End Header section --- */
 
 
-.catalog_wrapper {
+/* Product section */
+
+.product_wrapper {
     position: relative;
-    height: 650px;
-    background-color: pink;
-    margin-top: 200px;
+    margin-bottom: 1200px;
+}
+
+.catalog_wrapper {
+    width: 100%;
+    height: 900px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+.catalog {
+    position: relative;
+    height: 900px;
     padding-top: 25px;
     overflow: hidden;
 }
@@ -140,24 +175,25 @@ a.header_btn {
 .side_block {
     background-color: greenyellow;
     width: 1000px;
-    height: 600px;
+    height: 850px;
     position: absolute;
-    
-    @include transition(all,1s);
+    @include transition(all,2s);
 }
 
 .side_block_left {
+    background-image: url("../img/header_section/src/1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
     left: 0;
-
     @extend .side_block;
     @include block_clip($polygon-left);
 }
 
 .side_block_right {
     right: 0;
-
     @extend .side_block;
     @include block_clip($polygon-right);
+    width: 1100px;
 }
 
 .hide_left {
@@ -179,3 +215,16 @@ a.header_btn {
     opacity:1;
     right:0;
 }
+
+.catalog_content {
+    border: 1px solid #000;
+    max-width: 680px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    margin-top: -175px;
+    left: 50%;
+    margin-left: -380px;
+}
+
+/* --- End Product section --- */
