@@ -22,7 +22,7 @@ h4 {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.4em;
+  font-size: 2em;
   font-weight: 300;
 }
 
@@ -83,6 +83,23 @@ a.page_btn {
 
 a.page_btn:hover {
   transform: scale(1.05);
+}
+
+a.test_btn {
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+  color: #000000;
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 5px 15px;
+  width: 500px;
+  text-align: center;
+  text-decoration: none;
 }
 
 /* --- End Main elements --- */
@@ -153,7 +170,7 @@ a.header_btn {
 /* Product section */
 .product_wrapper {
   position: relative;
-  margin-bottom: 1200px;
+  height: 870px;
 }
 
 .catalog_wrapper {
@@ -172,7 +189,7 @@ a.header_btn {
 }
 
 .side_block, .side_block_left, .side_block_right {
-  background-color: greenyellow;
+  background-color: transparent;
   width: 1000px;
   height: 850px;
   position: absolute;
@@ -192,10 +209,12 @@ a.header_btn {
 }
 
 .side_block_right {
+  background-image: url("../img/header_section/src/1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
   right: 0;
   -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-  width: 1100px;
 }
 
 .hide_left {
@@ -218,15 +237,21 @@ a.header_btn {
   right: 0;
 }
 
-.catalog_content {
-  border: 1px solid #000;
-  max-width: 680px;
-  height: 400px;
+.catalog_content_block, .catalog_content_block_left, .catalog_content_block_right {
   position: absolute;
-  top: 50%;
-  margin-top: -175px;
-  left: 50%;
-  margin-left: -380px;
+  max-width: 676px;
+}
+
+.catalog_content_block_left {
+  top: 250px;
+  left: 120px;
+  margin-right: -340px;
+}
+
+.catalog_content_block_right {
+  top: 250px;
+  right: 120px;
+  margin-left: -340px;
 }
 
 /* --- End Product section --- */
