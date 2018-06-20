@@ -3,11 +3,8 @@
 /* Fonts */
 /* Others variables */
 /* Main elements */
-#page-wrapper {
-  margin-bottom: 200px;
-}
-
 h2 {
+  color: #000000;
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
   font-size: 3em;
@@ -136,13 +133,16 @@ a.test_btn {
 /* --- End Main elements --- */
 /* Menu */
 #menu_block {
+  background-color: #ffffff;
   height: 90px;
+  width: 100%;
   -webkit-box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
   -moz-box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
   -ms-box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
   box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
   padding-top: 20px;
-  position: relative;
+  position: fixed;
+  z-index: 11;
 }
 
 #menu_block .line {
@@ -173,32 +173,52 @@ a.header_btn {
 
 /* --- End Menu --- */
 /* Header section */
+.header_section_wrapper {
+  padding-top: 90px;
+}
+
 #header_section {
   background-image: url("../img/header_section/src/1.png");
   background-position: center center;
   background-repeat: no-repeat;
   height: 850px;
   position: relative;
+  overflow: hidden;
 }
 
-.header_section_block {
-  background: #ffffff;
-  box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
+.header_side_block {
+  background-color: #ffffff;
   width: 550px;
-  height: 450px;
-  padding-top: 75px;
+  height: 100%;
   position: absolute;
-  top: 90px;
-  right: 200px;
+  right: 0;
+  z-index: 2;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
 }
 
-.header_section_block img {
+.header_side_block img {
+  margin: 100px auto;
+}
+
+.header_side_block .page_btn {
+  position: static;
+  margin-left: 0;
+  margin: 100px auto;
+}
+
+.header_side_block p {
+  font-size: 1.3em;
+  width: 450px;
   margin: 0 auto;
 }
 
 /* --- End Header section --- */
 /* Product section */
 .product_wrapper, .advantages_wrapper, .product_wrapper_projects {
+  --inv: #000;
   position: relative;
   height: 870px;
   overflow: hidden;
@@ -240,7 +260,7 @@ a.header_btn {
 }
 
 .catalog_bottom {
-  background-image: url("../img/product_section/src/1.png");
+  background-image: url("../img/product_section/src/5.jpg");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -440,4 +460,100 @@ a.carousel_btn {
 }
 
 /* --- End Crousel Section --- */
+/* Footer Section */
+#footer_section {
+  background-color: #fdead5;
+  padding: 80px;
+  position: relative;
+}
+
+#footer_section h2 {
+  font-weight: 400;
+  margin-left: 0;
+  text-align: center;
+}
+
+#footer_section #upper_title {
+  position: absolute;
+  z-index: 2;
+  top: 60px;
+  left: 50%;
+  margin-left: -150px;
+}
+
+#footer_section #hidden_title {
+  color: #f9debf;
+  font-size: 5em;
+  position: absolute;
+  left: 50%;
+  top: 65px;
+  margin-left: -250px;
+  z-index: 1;
+}
+
+#footer_section .btn_wrapper {
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+
+#footer_section a.test_btn {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 2em;
+  font-weight: 400;
+  margin-top: 0;
+  max-width: 500px;
+}
+
+#footer_section a.header_btn {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 0;
+  width: 500px;
+  padding: 5px 15px;
+  margin-top: 100px;
+}
+
+#footer_section p {
+  margin-left: 25px;
+}
+
+#footer_section .developers {
+  text-align: right;
+  margin-top: 60px;
+}
+
+#footer_section .developers p {
+  margin-left: 0;
+}
+
+.icons_block {
+  margin-top: 60px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+a.icon_circle {
+  border: 3px solid #000;
+  border-radius: 50%;
+  color: #000000;
+  display: inline-block;
+  font-size: 3em;
+  padding-top: 9px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.coyright {
+  text-align: center;
+}
+
+/* --- End Footer Section --- */
 /*# sourceMappingURL=main.css.map */

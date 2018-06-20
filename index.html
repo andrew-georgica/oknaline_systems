@@ -11,6 +11,10 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/form.css">
+
 
     <!-- Owl Carousel -->
     <link href="css/owl_slide.css" rel="stylesheet">
@@ -56,14 +60,41 @@
                   Заказать
                 </a>
             </div>
+            <div class="overlay-navigation">
+                <nav role="navigation">
+                  <ul>
+                    <li><a href="#" data-content="The beginning">Home</a></li>
+                    <li><a href="#" data-content="Curious?">About</a></li>
+                    <li><a href="#" data-content="I got game">Skills</a></li>
+                    <li><a href="#" data-content="Only the finest">Works</a></li>
+                    <li><a href="#" data-content="Don't hesitate">Contact</a></li>
+                    <!-- <li><a href="#" data-content="Don't hesitate">Contact</a></li> -->
+                  </ul>
+                </nav>
+              </div>
+            
+            <div class="open-overlay">
+              <span class="bar-top"></span>
+              <span class="bar-middle"></span>
+              <span class="bar-bottom"></span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div id="header_section">
-        <div class="header_section_block">
-          <img src="img/main_img/header_logo.png" alt="" class="img-responsive">
-          <a href="" class="page_btn">Бесплатный замер</a>
+      <div class="header_section_wrapper">
+        <div id="header_section">
+  
+          <div id="header_side_block" class="hide_right">
+              <img src="img/main_img/header_logo.png" alt="" class="img-responsive">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates adipisci
+                asperiores dolores animi eaque, recusandae assumenda magni quis ipsa blanditiis 
+                officiis suscipit aut, est fugit vel provident cumque esse exercitationem.
+              </p>
+              <a href="" class="page_btn">Бесплатный замер</a>
+          </div>
+  
         </div>
       </div>
 
@@ -90,9 +121,8 @@
                   Sed ut perspiciatis.
                 </p>
 
-                <a href="" class="test_btn">
-                  Заказать замер
-                </a>
+                <div class="btn_page from-left">Заказать замер</div>
+
               </div>
           </article>
         </div>
@@ -121,9 +151,8 @@
                   Sed ut perspiciatis.
                 </p>
 
-                <a href="" class="test_btn">
-                  Заказать замер
-                </a>
+                <div class="btn_page from-left">Заказать замер</div>
+
               </div>
           </article>
         </div>
@@ -152,9 +181,8 @@
                   Sed ut perspiciatis.
                 </p>
 
-                <a href="" class="test_btn">
-                  Заказать замер
-                </a>
+                <div class="btn_page from-left">Заказать замер</div>
+
               </div>
           </article>
         </div>
@@ -399,6 +427,74 @@
     
       </section>
 
+      <section id="footer_section" class="container-fluid">
+
+        <header>
+          <h2 id="upper_title">
+            Мы на связи
+          </h2>
+          <h2 id="hidden_title">
+            Мы на связи
+          </h2>
+        </header>
+
+        <article class="row btn_wrapper">
+            <section class="content bgcolor-1">
+                <span class="input input--haruki">
+                    <input class="input__field input__field--haruki" type="text" id="input-1" />
+                    <label class="input__label input__label--haruki" for="input-1">
+                        <span class="input__label-content input__label-content--haruki">Имя</span>
+                    </label>
+                </span>
+                <span class="input input--haruki">
+                    <input class="input__field input__field--haruki" type="text" id="input-2" />
+                    <label class="input__label input__label--haruki" for="input-2">
+                        <span class="input__label-content input__label-content--haruki">Телефон</span>
+                    </label>
+                </span>
+                <a href="" class="header_btn">
+                  Заказать звонок
+                </a>
+            </section>
+          
+            <!-- <a href="" class="header_btn">
+              Заказать звонок
+            </a> -->
+          
+        </article>
+
+        <p>
+            Звоните по номеру  099-11-11-111
+        </p>
+
+        <p>
+            Пишите на почту sales@oknalinesystem.com
+        </p>
+
+        <article class="icons_block">
+          <a href="" class="icon_circle">
+              <i class="fa fa-google-plus" aria-hidden="true"></i>
+          </a>
+          <a href="" class="icon_circle">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="" class="icon_circle">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </article>
+
+        <p class="coyright">
+            © OKNA LINE SYSTEMS 2018 рік. Чернівці, Україна
+        </p>
+
+        <article class="developers">
+          <p>
+              Разработка и дизайн сайта
+          </p>
+          <img src="img/footer_section/src/1.png" alt="">
+        </article>
+
+      </section>
 
     </section>
 
@@ -448,6 +544,14 @@
     <!-- Owl Carousel -->
     <script src="js/owl.carousel.js"></script>
     <script src="js/owl.js"></script>
+
+    <!-- Menu -->
+    <script src='js/velocity.min.js'></script>
+    <script src='js/velocity.ui.min.js'></script>
+    <script src="js/menu.js"></script>
+
+    <!-- Form -->
+    <script src="js/classie.js"></script>
 
   </body>
 </html>
