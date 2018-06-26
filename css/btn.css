@@ -1,8 +1,10 @@
+
 /* ~~~~~~~ INIT. btn_page ~~~~~~~ */
 
-.btn_page {		
+a.btn_page {		
     border-top: 2px solid #000000;
-    border-bottom: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+	display: block;
     font-family: "Cormorant Garamond", serif;
     font-weight: 700;
     font-size: 2em;
@@ -10,13 +12,19 @@
 	padding: 15px 25px;
 	color: #000;
     letter-spacing: 1.1rem;
-    text-align: center;
+	text-align: center;
+	text-decoration: none;
 	text-transform: uppercase;
 	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
 	cursor: pointer;
     user-select: none;
     width: 500px;
     margin-top: 50px;
+}
+
+.btn_page a {
+	color: #000000;
+	text-decoration: none;
 }
 
 .btn_page:before, .btn_page:after {
@@ -30,6 +38,12 @@
 	color: #fff;
 	transition-delay: .6s;
 }
+
+.btn_page a {
+	color: #000000;
+	text-decoration: none;
+}
+
 
 .btn_page:hover:before {
 	transition-delay: 0s;
@@ -64,3 +78,8 @@
 .from-left:hover:after {
 	width: 100%;
 }
+
+
+
+
+

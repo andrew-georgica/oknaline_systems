@@ -48,6 +48,7 @@
 
 #owl-1 .item {
 	padding: 50px;
+	padding-bottom: 0;
 }
 
 #owl-1 .item img {

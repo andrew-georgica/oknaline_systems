@@ -429,12 +429,8 @@ a.header_btn {
   margin-bottom: 50px;
 }
 
-.left_img {
-  float: left;
-  margin-right: 20px;
-}
-
-.right_img img {
+.project_col img {
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -446,10 +442,8 @@ a.carousel_btn {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.5em;
   font-weight: 600;
-  position: absolute;
-  right: 85px;
   padding: 3px 15px;
-  width: 530px;
+  width: 100%;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -493,7 +487,7 @@ a.carousel_btn {
 
 #footer_section .btn_wrapper {
   margin-top: 120px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 #footer_section a.test_btn {
@@ -506,15 +500,15 @@ a.carousel_btn {
 }
 
 #footer_section a.header_btn {
-  display: block;
+  display: inline-block;
   font-family: "Cormorant Garamond", serif;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 400;
   text-transform: uppercase;
-  margin-left: 0;
-  width: 500px;
-  padding: 5px 15px;
-  margin-top: 100px;
+  margin-left: 18px;
+  width: 350px;
+  padding: 7px 15px;
+  margin-top: 16px;
 }
 
 #footer_section p {
@@ -528,6 +522,10 @@ a.carousel_btn {
 
 #footer_section .developers p {
   margin-left: 0;
+}
+
+form {
+  text-align: center;
 }
 
 .icons_block {
@@ -556,4 +554,141 @@ a.icon_circle {
 }
 
 /* --- End Footer Section --- */
+/* Modal section */
+.x {
+  display: block;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  width: 36px;
+  height: 36px;
+  transition: transform .25s ease-in-out;
+}
+
+.x:hover {
+  transform: rotate(180deg);
+}
+
+.x:before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 36px;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+.x:after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 36px;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
+
+#modals-section .modal-backdrop.in {
+  opacity: 0;
+}
+
+#modals-section .modal-dialog {
+  border: 1px solid #fff;
+  text-align: center;
+  -webkit-box-shadow: 2px 20px 30px -1px rgba(47, 47, 47, 0.5);
+  -moz-box-shadow: 2px 20px 30px -1px rgba(47, 47, 47, 0.5);
+  box-shadow: 2px 20px 30px -1px rgba(47, 47, 47, 0.5);
+}
+
+#modals-section .modal-dialog .modal-content {
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+}
+
+#modals-section .modal-dialog #catalog.modal-content {
+  padding-bottom: 10px;
+}
+
+#modals-section .modal-dialog .close {
+  border-color: #333;
+  color: #333;
+  font-size: 2.5em;
+  opacity: 1;
+  margin-bottom: 20px;
+  text-shadow: none;
+}
+
+.modal-backdrop {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Modal Homepage */
+#modals-section input[type=text] {
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  color: #000000;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  padding-left: 0;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin: 30px auto;
+  outline: none;
+}
+
+#modals-section form {
+  text-align: left;
+}
+
+#modals-section h4 {
+  font-family: "Cormorant Garamond", serif;
+  margin-top: 50px;
+}
+
+textarea {
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 160px;
+  margin: 0 auto;
+  outline: none;
+  vertical-align: middle;
+  padding: 20px;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+#modals-section .header_btn {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 18px;
+  width: 300px;
+  padding: 7px 15px;
+  margin: 0 auto;
+}
+
+/* --- End Modal section --- */
 /*# sourceMappingURL=main.css.map */

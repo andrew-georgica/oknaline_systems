@@ -1,4 +1,5 @@
-     $('.open-overlay').click(function() {
+
+$('.open-overlay, .overlay-navigation li').click(function() {
        $('.open-overlay').css('pointer-events', 'none');
        var overlay_navigation = $('.overlay-navigation'),
          top_bar = $('.bar-top'),

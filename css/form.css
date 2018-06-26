@@ -96,6 +96,7 @@
 .input__label-content--haruki {
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
+	text-align: center;
 }
 
 .input__label--haruki::before,
@@ -116,7 +117,7 @@
 }
 
 .input__label--haruki::after {
-	bottom: 0;
+	bottom: 5px;
 }
 
 .input__field--haruki:focus + .input__label--haruki .input__label-content--haruki,
