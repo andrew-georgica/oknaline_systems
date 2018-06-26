@@ -483,7 +483,7 @@ a.carousel_btn {
         z-index: 2;
         top: 60px;
         left: 50%;
-        margin-left: -150px;
+        margin-left: -135px;
     }
 
     #hidden_title {
@@ -492,7 +492,7 @@ a.carousel_btn {
         position: absolute;
         left: 50%;
         top: 65px;
-        margin-left: -250px;
+        margin-left: -230px;
         z-index: 1;
     }
 
@@ -529,12 +529,31 @@ a.carousel_btn {
     .developers {
         text-align: right;
         margin-top: 60px;
+        position: relative;
+        padding-bottom: 40px;
 
         p {
             margin-left: 0;
         }
+
+        a.arrow_top {
+            border: 2px solid #000;
+            color: $page_font_color;
+            display: block;
+            font-size: 3em;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            right: 0;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+
     }
 }
+
 
 form {
     text-align: center;

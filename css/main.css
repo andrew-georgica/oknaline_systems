@@ -472,7 +472,7 @@ a.carousel_btn {
   z-index: 2;
   top: 60px;
   left: 50%;
-  margin-left: -150px;
+  margin-left: -135px;
 }
 
 #footer_section #hidden_title {
@@ -481,7 +481,7 @@ a.carousel_btn {
   position: absolute;
   left: 50%;
   top: 65px;
-  margin-left: -250px;
+  margin-left: -230px;
   z-index: 1;
 }
 
@@ -518,10 +518,26 @@ a.carousel_btn {
 #footer_section .developers {
   text-align: right;
   margin-top: 60px;
+  position: relative;
+  padding-bottom: 40px;
 }
 
 #footer_section .developers p {
   margin-left: 0;
+}
+
+#footer_section .developers a.arrow_top {
+  border: 2px solid #000;
+  color: #000000;
+  display: block;
+  font-size: 3em;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
 }
 
 form {
