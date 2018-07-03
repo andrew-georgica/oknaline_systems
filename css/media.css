@@ -319,6 +319,10 @@
         width: 600px;
     }
 
+    #footer_section #upper_title {
+        margin-left: -100px;
+    }
+
 }
 
 @media screen and (max-width: 1150px) {
@@ -539,29 +543,417 @@
 
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 960px) {
 
     .product_wrapper, .advantages_wrapper, .product_wrapper_projects {
-        height: 1120px;
+        height: 950px;
     }
 
-    .catalog_wrapper, .advantages_catalog_wrapper, .catalog_wrapper_projects {
-        height: 1150px;
+    .catalog_wrapper, .advantages_catalog_wrapper {
+        height: 950px;
     }
 
-    .catalog, .advantages_catalog, .catalog_bottom, .catalog_projects {
-        height: 1150px;
+    .catalog, .advantages_catalog, .catalog_projects {
+        height: 950px;
+    }
+
+    .catalog_bottom {
+        height: 700px;
+    }
+
+    #catalog_bottom {
+        height: 700px;
+    }
+
+    #catalog_bottom .catalog_wrapper{
+        height: 700px;
+    }
+
+    .catalog_wrapper_projects {
+        height: 675px;
+    }
+
+    #catalog_projects, .catalog_projects {
+        height: 675px;
+    }
+
+    #anchor_4 {
+        height: 800px;
+    }
+
+    .advantages_catalog_wrapper {
+        height: 800px;
+    }
+
+    .advantages_catalog {
+        height: 800px;
+    }
+
+    .straight_side_block_right {
+        width: 400px;
+        height: 590px;
+        top: 130px;
+    }
+
+    .advantages_content {
+        width: 400px;
+    }
+
+    .advantages_number {
+        font-size: 5em;
+        margin-top: 10px;
     }
 
     .side_block, .side_block_left, .side_block_right {
-        position: static;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         width: 100%;
+        height: 500px;
     }
 
     .catalog_content_block_right, .catalog_content_block_left {
         position: static;
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0 auto;
+        margin-top: 550px;
     }
 
+}
+
+@media screen and (max-width: 900px) {
+    #footer_section a.header_btn {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 830px) {
+
+    #menu_block {
+        padding-top: 26px;
+    }
+
+    #menu_block h2 {
+        margin-left: 70px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    a.header_btn {
+        border: 2px solid #000;
+        font-size: 1.1em;
+        margin-left: 20px;
+        width: 120px;
+    }
+
+    .open-overlay {
+        right: 5rem;
+        top: -5px;
+        width: 30px;
+    }
+
+    .title_section, .straight_title, .right_title {
+        height: 120px;
+        padding-top: 48px;
+    }
+
+    .right_title {
+        height: 120px;
+        padding-top: 28px;
+    }
+
+    #catalog_bottom {
+        height: 610px;
+    }
+
+    .catalog_bottom {
+        background-image: url("../img/product_section/src/5_1.jpg");
+        height: 520px;
+    }
+
+    #catalog_bottom .catalog_wrapper {
+        height: 520px;
+    }
+
+    #catalog_bottom {
+        height: 520px;
+    }
+
+    .content_block {
+        margin-left: -300px;
+        width: 600px;
+        height: 190px;
+        margin-top: -60px
+    }
+
+    .catalog_projects {
+        background-image: url("../img/product_section/src/3_1.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 290px;
+        margin-top: 60px;
+    }
+
+    #catalog_projects, .catalog_projects {
+        height: 405px;
+    }
+
+    .catalog_wrapper_projects {
+        height: 405px;
+    }
+
+    #anchor_4 {
+        height: 1000px;
+    }
+
+    .advantages_catalog {
+        height: 1000px;
+    }
+
+    .straight_side_block_left {
+        background-image: url("../img/product_section/src/3_1.png");
+        width: 830px;
+        height: 290px;
+        margin-top: 55px;
+        position: absolute;
+        -webkit-transition: all 2s;
+        transition: all 2s;
+    }
+
+    .straight_side_block_right {
+        position: static;
+        margin: 0 auto;
+        margin-top: 350px;
+    }
+
+    #footer_section #upper_title {
+        font-size: 2.4em;
+        margin-left: -110px;
+    }
+
+    .input {
+        margin-bottom: 50px;
+    }
+
+    #footer_section .developers a.arrow_top {
+        font-size: 2.2em;
+        width: 45px;
+        height: 45px;
+    }
+
+    a.icon_circle {
+        font-size: 1.8em;
+        padding-top: 11px;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 60px;
+        height: 60px;
+    }
+    
+
+}
+
+@media screen and (max-width: 767px) {
+
+    #header_section {
+        height: 600px;
+    }
+
+    .right_column {
+        display: none;
+    }
+
+    #header_side_block {
+        display: none;
+    }
+
+    #header_hidden_block {
+        display: block;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    a.page_btn {
+        font-size: 1em;
+        width: 200px;
+        left: 50%;
+        margin-left: -100px;
+        bottom: -17px;
+        padding: 10px 10px;
+    }
+
+    a.icon_circle {
+        font-size: 1.8em;
+        padding-top: 11px;
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .side_block_left {
+        background-image: url("../img/product_section/src/1_1.jpg");
+    }
+
+    .side_block_right {
+        background-image: url("../img/product_section/src/2_1.jpg");
+    }
+
+    #left_block_bottom.side_block_left {
+        background-image: url("../img/product_section/src/3_1.jpg");
+    }
+
+    .content_block {
+        margin-left: -150px;
+        width: 300px;
+        height: 150px;
+        margin-top: -50px;
+        padding: 40px;
+        
+    }
+
+    .content_block p {
+        font-size: 1.2em;
+    }
+
+    a.icon_circle {
+        font-size: 1.8em;
+        padding-top: 6px;
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #footer_section #hidden_title {
+        color: #f9debf;
+        font-size: 4em;
+        position: absolute;
+        left: 50%;
+        top: 65px;
+        margin-left: -188px;
+        z-index: 1;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .open-overlay {
+        right: 2rem;
+        top: -7px;
+        width: 30px;
+    }
+
+    .line {
+        width: 50px;
+        margin-right: 100px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        margin-left: 70px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    a.btn_page {
+        font-size: 1em;
+        width: 350px;
+    }
+
+    .catalog_content_block_right, .catalog_content_block_left {
+        width: 350px;
+        margin-top: 570px;
+    }
+
+    .title_section, .straight_title {
+        height: 120px;
+        padding-top: 50px;
+    }
+
+   .right_title {
+        height: 120px;
+        padding-top: 29px;
+    }
+
+    #footer_section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #footer_section a.header_btn {
+        font-size: 1.5em;
+        width: 300px;
+    }
+
+    
+}
+
+@media screen and (max-width: 450px) {
+
+    .line {
+        top: 50px;
+        left: 0;
+    }
+
+    #menu_block .line {
+        margin-top: -35px;
+    }
+
+    .title_section, .straight_title {
+        height: 120px;
+        padding-top: 40px;
+    }
+
+    .right_title .line {
+        margin-top: -12px;
+    }
+
+    .straight_side_block_right {
+        width: 100%;
+        height: 590px;
+        top: 130px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .advantages_content {
+        width: 100%;
+    }
+
+    .catalog_content_block_right, .catalog_content_block_left {
+        width:100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 570px;
+    }
+
+    #modals-section .header_btn {
+        font-size: 1.3em;
+        width: 260px;
+    }
+
+    a.carousel_btn {
+        font-size: 1.1em;
+        padding: 3px 15px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    a.btn_page {
+        font-size: 1em;
+        width: 330px;
+    }
 }

@@ -210,6 +210,21 @@ a.header_btn {
   margin: 0 auto;
 }
 
+#header_hidden_block {
+  position: relative;
+  background-color: #ffffff;
+  display: none;
+  width: 300px;
+  height: 300px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#header_hidden_block img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
 /* --- End Header section --- */
 /* Product section */
 .product_wrapper, .advantages_wrapper, .product_wrapper_projects {

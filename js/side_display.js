@@ -101,7 +101,7 @@ function myFunction(x) {
 
         $(function(){
             $(window).scroll(function(){
-                if ($(this).scrollTop() > 200){
+                if ($(this).scrollTop() > 150){
                     $('.title_container_1').addClass('show_left');
                     $('.side_block_left_1').addClass('show_left');
                 }
@@ -114,7 +114,7 @@ function myFunction(x) {
         
         $(function(){
             $(window).scroll(function(){
-                if ($(this).scrollTop() > 900){
+                if ($(this).scrollTop() > 1050){
                     $('.title_container_2').addClass('show_left');
                     $('.side_block_right_1').addClass('show_right');
                 }
@@ -127,7 +127,7 @@ function myFunction(x) {
         
         $(function(){
             $(window).scroll(function(){
-                if ($(this).scrollTop() > 1700){
+                if ($(this).scrollTop() > 2000){
                     $('.title_container_3').addClass('show_left');
                     $('.side_block_left_3').addClass('show_left');
                 }
@@ -140,7 +140,7 @@ function myFunction(x) {
         
         $(function(){
             $(window).scroll(function(){
-                if ($(this).scrollTop() > 3100){
+                if ($(this).scrollTop() > 3600){
                     $('.title_container_right_1').addClass('show_right');
                     $('.straight_side_block_left_1').addClass('show_left');
                 }
@@ -156,7 +156,7 @@ function myFunction(x) {
 
         $(function(){
             $(window).scroll(function(){
-                if ($(this).scrollTop() > 120){
+                if ($(this).scrollTop() > 100){
                     $('.title_container_1').addClass('show_left');
                     $('.side_block_left_1').addClass('show_left');
                 }
